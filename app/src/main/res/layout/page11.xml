@@ -1,0 +1,1345 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/applogo" />
+
+            <RelativeLayout
+                android:id="@+id/rlnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="23dp"
+                android:layout_toLeftOf="@+id/rlopen" >
+
+                <Button
+                    android:id="@+id/btn_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/newconflictbtn" />
+
+                <TextView
+                    android:id="@+id/txtnew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_new"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="New"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtnewconflict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnew"
+                    android:layout_centerHorizontal="true"
+                    android:text="Conflict"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="23dp"
+                android:layout_toLeftOf="@+id/rlclose" >
+
+                <Button
+                    android:id="@+id/btn_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/openconflictbtn" />
+
+                <TextView
+                    android:id="@+id/txtopen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_open"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="Open"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtopenconflict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtopen"
+                    android:layout_centerHorizontal="true"
+                    android:text="Conflict"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" >
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/closeconflictbtn" />
+
+                <TextView
+                    android:id="@+id/txtclose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_close"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="Close"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtcloseconflict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtclose"
+                    android:layout_centerHorizontal="true"
+                    android:text="Conflict"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl_header"
+            android:background="#FFFFFF"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/firstscrolllayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/underline_page11"
+                        android:textColor="#00478f"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btnreset"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/reseticonfile" />
+
+                    <ImageView
+                            android:id="@+id/imghint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:layout_toLeftOf="@+id/btnreset"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/hintt"
+                            android:layout_marginRight="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/check_conflictsolved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/customcheckboxdesign" />
+
+                    <TextView
+                        android:id="@+id/txtcheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/check_conflictsolved"
+                        android:text="Conflict solved"
+                        android:textColor="#00478f"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <!-- <TextView
+                    android:id="@+id/textView133"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/checkinstruction"
+                    android:textColor="#000000"
+                    android:textSize="16dp" /> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textColor="#00478f"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/btnverifytitle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/btnedittitle"
+                            android:background="@drawable/verifyiconfile" />
+
+                        <Button
+                            android:id="@+id/btnedittitle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/editiconfile" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Provide a title for your conflict"
+                            android:inputType="textMultiLine"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                             >
+                        </EditText>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:paddingBottom="5dp"
+                            android:text="Objective A"
+                            android:textColor="#00478f"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/btnverifyobjective"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/btneditobjective"
+                            android:background="@drawable/verifyiconfile" />
+
+                        <Button
+                            android:id="@+id/btneditobjective"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/editiconfile" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/objective_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Why are B and C so important? What is the common objective or aim behind needs B and C?"
+                        android:inputType="textMultiLine"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/textView14"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView1"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Need B"
+                            android:textColor="#00478f"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/btneditneedb"
+                            android:background="@drawable/forwordarrownew"
+                            android:paddingTop="0dp" />
+
+                        <Button
+                            android:id="@+id/btnverifyneedb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView1"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/textView7"
+                            android:background="@drawable/verifyiconfile" />
+
+                        <Button
+                            android:id="@+id/btneditneedb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView1"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/btnverifyneedb"
+                            android:background="@drawable/editiconfile" />
+
+                        <TextView
+                            android:id="@+id/textView99"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView14"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView2"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/btnverifyneedc"
+                            android:paddingBottom="5dp"
+                            android:text="Need C"
+                            android:textColor="#00478f"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/btnverifyneedc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView2"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/btneditneedc"
+                            android:background="@drawable/verifyiconfile" />
+
+                        <Button
+                            android:id="@+id/btneditneedc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/editiconfile" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/textView6"
+                            android:background="@drawable/backwordarrownew" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_centerHorizontal="true"
+                            android:text=""
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="0dp" >
+
+                    <EditText
+                        android:id="@+id/need_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView8"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/textView8"
+                        android:gravity="top"
+                        android:hint="What need do you fulfill by action D? Needs should not be actions. Use words like HAVE, BE, ENSURE"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="2dp"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/need_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView8"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView8"
+                        android:gravity="top"
+                        android:hint="What need will you fulfill by action D&apos;? Needs should not be actions. Use words like HAVE, BE, ENSURE"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="2dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="30dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView11"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Injection I"
+                            android:textColor="#00478f"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/textView9"
+                            android:background="@drawable/backwordarrownew"
+                            android:paddingTop="0dp" />
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text=""
+                            android:textSize="22dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textVieww6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageView12"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:text="      "
+                            android:textColor="#00478f"
+                            android:textSize="23dp" />
+
+                        <Button
+                            android:id="@+id/btnverifyinjection"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/imageView12"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/btneditinjection"
+                            android:background="@drawable/verifyiconfile" />
+
+                        <Button
+                            android:id="@+id/btneditinjection"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/imageView12"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/editiconfile" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/textView9gf"
+                            android:background="@drawable/forwordarrownew" />
+
+                        <TextView
+                            android:id="@+id/textView101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text=""
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/textView9gf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Injection I"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/injection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Create the solution and write it down\n\n• Check to see that the solution meets the needs of B and C: &quot;If I carry out/ensure the solution activity then I will attain B and C, because...&quot;.\n• Include reasons why the solution leads to satisfying the needs of B and C.\n• If the solution and the two reasons are inconsistent, work on the wording or select another option from the list of possible solutions on the left."
+                        android:inputType="textMultiLine"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/rr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/textView102"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/btneditabneeded"
+                                android:paddingLeft="5dp"
+                                android:text="In order to have A, B is needed because"
+                                android:textColor="#00478f"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btnverifyabneeded"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignBottom="@+id/textView3"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toLeftOf="@+id/btneditabneeded"
+                                android:background="@drawable/verifyiconfile"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/btneditabneeded"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignBottom="@+id/textView3"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/editiconfile" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView102"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/textView102"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/btneditacneeded"
+                                android:paddingLeft="5dp"
+                                android:text="In order to have A, C is needed because"
+                                android:textColor="#00478f"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btnverifyacneeded"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignBottom="@+id/textView11"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toLeftOf="@+id/btneditacneeded"
+                                android:background="@drawable/verifyiconfile"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/btneditacneeded"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignBottom="@+id/textView11"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/editiconfile" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rr" >
+
+                        <EditText
+                            android:id="@+id/a_b_needed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textVview10"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/textVview10"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Assumption why is B necessary in order to get A? Complete the sentence &quot;In order to have A, I need to do B because...&quot; "
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="2dp"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textVview10"
+                            android:layout_width="5dp"
+                            android:layout_height="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/a_c_needed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textVview10"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/textVview10"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Assumption why is C necessary in order to get A? Complete the sentence &quot;In order to have A, I need to do C because...&quot;"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="2dp"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/rrr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/textView13"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="If Injection/Solution exists, B also exists, because"
+                                android:textColor="#00478f"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/textView13"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="If Injection/Solution exists, C also exists, because"
+                                android:textColor="#00478f"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rrr" >
+
+                        <EditText
+                            android:id="@+id/i_exist_b_alsoExist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textVview13"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/textVview13"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Add reason why need B exists after Injection I"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="2dp"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textVview13"
+                            android:layout_width="5dp"
+                            android:layout_height="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/i_exist_c_alsoexist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textVview13"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/textVview13"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Add reason why need C exists after Injection I"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="2dp"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="File name already exists"
+                    android:textColor="#FF00FF"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/seek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="10" >
+
+                        <SeekBar
+                            android:id="@+id/sBcompleted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/cuseekbar" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/seekcompleted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seek"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="10" >
+
+                        <TextView
+                            android:id="@+id/txtcompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="5dp"
+                            android:text="completed"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tvcompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txtcompleted"
+                            android:layout_weight="2"
+                            android:text="0%"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ff"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/seekcompleted" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#000000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view4"
+                            android:layout_alignLeft="@+id/view1"
+                            android:background="#000000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view4"
+                            android:layout_toRightOf="@+id/gg2"
+                            android:background="#000000" />
+
+                        <RelativeLayout
+                            android:id="@+id/gg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/gg1"
+                            android:layout_below="@+id/gg1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp" >
+
+                            <Button
+                                android:id="@+id/btn_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/back" />
+
+                            <RelativeLayout
+                                android:id="@+id/gg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp" >
+
+                                <Button
+                                    android:id="@+id/btnstory"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:background="#FFFFFF"
+                                    android:text="Story"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btnstory"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/btndiagrom"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/tt1"
+                                    android:background="#FFFFFF"
+                                    android:text="Diagram"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btndiagrom"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/btnwhya"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/tt2"
+                                    android:background="#FFFFFF"
+                                    android:text="A"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btnwhya"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/btnwhyb"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/tt3"
+                                    android:background="#FFFFFF"
+                                    android:text="B"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btnwhyb"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/btnwhyc"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/tt4"
+                                    android:background="#FFFFFF"
+                                    android:text="C"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btnwhyc"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/btnwhyd"
+                                    style="?android:attr/buttonStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/tt5"
+                                    android:background="#FFFFFF"
+                                    android:text="D"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tt6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/btnwhyd"
+                                    android:text="-"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+
+                                <Button
+                                    android:id="@+id/bttt"
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="#FFFFFF"
+                                    android:text=""
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gg2"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal" >
+
+                            <Button
+                                android:id="@+id/btnwhyd2"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="#FFFFFF"
+                                android:text="D&apos;"
+                                android:textColor="#000000"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/tt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/btnwhyd2"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btnconflict"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/tt7"
+                                android:background="#FFFFFF"
+                                android:text="Conflict"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/tt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/btnconflict"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btnidea"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/tt8"
+                                android:background="#FFFFFF"
+                                android:text="Ideas"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/tt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/btnidea"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/btnsolution"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tt9"
+                                android:background="#FFFFFF"
+                                android:text="Solution"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/tt10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/btnsolution"
+                                android:text="-"
+                                android:textColor="#000000"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gg4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gg3"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="10dp" >
+
+                            <Button
+                                android:id="@+id/btncheck"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="#FFFFFF"
+                                android:text="Check"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/gg4"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#000000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" >
+
+                        <Button
+                            android:id="@+id/btn_save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/save" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#4b4c4d"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>

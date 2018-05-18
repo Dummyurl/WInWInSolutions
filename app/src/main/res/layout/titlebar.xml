@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00478f" >
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#00478f"
+        android:padding="0dp"
+        android:text=" Exit App"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/btnline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnexit"
+        android:background="#00478f"
+        android:padding="0dp"
+        android:text="|"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_faq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnline2"
+        android:background="#00478f"
+        android:text="FAQ"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btn_faq"
+        android:background="#00478f"
+        android:padding="0dp"
+        android:text="|"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnline"
+        android:background="#00478f"
+        android:padding="0dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+</RelativeLayout>

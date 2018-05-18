@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/applogo" />
+
+        <RelativeLayout
+            android:id="@+id/rlnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/rlopen" >
+
+            <Button
+                android:id="@+id/btn_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/newconflictbtn" />
+
+            <TextView
+                android:id="@+id/txtnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_new"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="New"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtnewconflict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnew"
+                android:layout_centerHorizontal="true"
+                android:text="Conflict"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlopen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/rlclose" >
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/openconflictbtn" />
+
+            <TextView
+                android:id="@+id/txtopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_open"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="Open"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtopenconflict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtopen"
+                android:layout_centerHorizontal="true"
+                android:text="Conflict"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/closeconflictbtn" />
+
+            <TextView
+                android:id="@+id/txtclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_close"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="Close"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtcloseconflict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtclose"
+                android:layout_centerHorizontal="true"
+                android:text="Conflict"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/dropboxfilehint"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/hintt" />
+
+        <Button
+            android:id="@+id/btn_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dropboxfilehint"
+            android:background="@drawable/dropboxiconfile" />
+
+        <Button
+            android:id="@+id/btn_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/deviceiconfile" />
+
+        <ImageView
+            android:id="@+id/devicefilehint"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btn_device"
+            android:background="@drawable/hintt" />
+
+        <Button
+            android:id="@+id/btn_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/googledriveiconfile"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtopenconflicts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listfrom"
+        android:layout_weight="1"
+        android:background="#00478f"
+        android:padding="2dp"
+        android:text="Open conflicts"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopenconflicts"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="File Name"
+             android:paddingLeft="5dp"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+         <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button1"
+                android:text="Operation"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/sends"
+                android:text="" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:background="#00478f" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_marginBottom="30dp" >
+
+        <ListView
+            android:id="@+id/dropbox_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/empty_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="There is no _conflict file saved in your Dropbox."
+            android:textSize="18dp"
+            android:visibility="gone"
+             android:textColor="#00478f"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No any conflict file is saved on your device."
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="#4b4c4d" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Solutions</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_page1">Page1</string>
+    <string name="title_activity_page2">Page2</string>
+    <string name="title_activity_page3">Page3</string>
+    <string name="title_activity_page4">Page4</string>
+    <string name="title_activity_page5">Page5</string>
+    <string name="title_activity_page6">Page6</string>
+    <string name="title_activity_page7">Page7</string>
+    <string name="title_activity_page8">Page8</string>
+    <string name="title_activity_page9">Page9</string>
+    <string name="title_activity_page10">Page10</string>
+    <string name="title_activity_page11">Page11</string>
+    <string name="heading1"><u>What is a conflict?</u></string>
+    <string name="heading2"><u>How to solve the conflict:</u></string>
+    <string name="paragraph1">A person has two options to decide about what to do. He can not take both. Each option is necessary to fulfill a need of the person. Both needs are necessary to achieve a higher objective of the person. So he is in a quandary.</string>
+    <string name="paragraph2">Two persons are in conflict about what to do in a specific situation. Each person wants to fulfill a personal need. And there is a higher objective, they share. The two needs are necessary conditions to reach the higher objective.</string>
+    <string name="point1">Identify the two options, the two needs and the one higher objective.</string>
+    <string name="point2">Identify the underlying assumptions:</string>
+    <string name="point3">Identify which of the assumptions are wrong or can be falsified?</string>
+    <string name="point4">Create a solution based on the wrong assumptions.</string>
+    <string name="point5">Check the solution.</string>
+    <string name="sub_point1">Why is the higher objective necessary?</string>
+    <string name="sub_point2">Why are the needs necessary to reach the higher objective?</string>
+    <string name="sub_point3">Why is option 1 necessary to fulfill need 1? Why is option 2 necessary to fulfill need 2?</string>
+    <string name="sub_point4">Why is it not possible to do both options at the same time? Why are they in conflict?</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="underline_page1"><u><b>CONFLICT STORY</b></u></string>
+    <string name="underline_page2"><u><b>OBJECTIVE, NEEDS, WANTS</b></u></string>
+    <string name="underline_page3"><u><b>WHY A?</b></u></string>
+    <string name="underline_page4"><u><b>WHY B?</b></u></string>
+    <string name="underline_page5"><u><b>WHY C?</b></u></string>
+    <string name="underline_page6"><u><b>WHY D?</b></u></string>
+    <string name="underline_page7"><u><b>WHY D"'"?</b></u></string>
+    <string name="underline_page8"><u><b>WHY CONFLICT EXISTS?</b></u></string>
+    <string name="underline_page9"><u><b>IDEAS FOR INJECTIONS</b></u></string>
+    <string name="underline_page10"><u><b>INJECTION / SOLUTION</b></u></string>
+    <string name="underline_page11"><u><b>CHECK SOLUTION</b></u></string>
+    <string name="title_activity_success">Success</string>
+    <string name="title_activity_conflict__list">Conflict_List</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_faq">FAQ</string>
+    <string name="link"><a href="http://winwin.vistem.eu">http://winwin.vistem.eu</a></string>
+    <string name="question1">FAQ and more information about conflict solving and WinWin Solutions:</string>
+    <string name="question2">Where do the Ideas for Injection come from? Are these preloaded into the app, ideas that will apply to any and all conflicts for the user to explore? Or is this something the user fills out? I am assuming since it says "read only" that this will be something preloaded into the app.</string>
+    <string name="question3">User will enter all data into different-different screens. No processing by app. At the end app will arrange all data in a doc. Is this you want?</string>
+    <string name="question4">let us say two people open a conflict and they fill in a form how will the app decide who is wrong or who is right.</string>
+    <string name="question5">how ideas of injections screen works.</string>
+    <string name="question6">Suppose I have a Problem that I want to marry. and now I do have two choice I want to marry my girlfriend and my father is suggesting me for arrange marriage. That means I am in conflicts. So, if I am the user of this app, then this app will suggest me the best way to solve this situation.</string>
+    <string name="question7">How will the screens look for Open conflict and close conflict?</string>
+    <string name="question8">Do you really want to connect app to google drive or dropbox. since we will store only text we can use mobile memory to store that. there is no need as such for DB or GD.</string>
+    <string name="answer1">every user can create unlimited conflict files and save them in dropbox, google drive or any other file system.</string>
+    <string name="answer2">"read only" are some fields, the user has filled in on previous screens ... so: no, there are no predefined solutions.</string>
+    <string name="answer3">Yes, and the doc can be reopend by the app, so that the user can change the content.</string>
+    <string name="answer4">The app will not make any decision for the user. If two persons have different solutions, they have to talk about it.</string>
+    <string name="answer5">The app only asks questions. User writes down his own ideas into the fields.</string>
+    <string name="answer6">The App will lead you (by asking the right questions in the right sequence) to find a solution yourself. The App only guides you to find your own solution. There is no "magic" in the app itself.</string>
+    <string name="answer7">Open and save/close are only buttons on each page. To open a conflict means to open a file! Such as you can open and save/close a word or excel file.</string>
+    <string name="answer8">User should be able to store data whereever he wants ... and to share the files with other person (in order to get feedback or share knowledge). GD or DB are my prefered ways to store and share data. I avoud to store data on my mobil device.
+</string>
+    <string name="title_activity_view__conflict__file">View_Conflict_File</string>
+    <string name="title_activity_clo_se">CloSe</string>
+    <string name="title_activity_aa">AAA</string>
+    <string name="title_activity_drop_box_file">DropBoxFile</string>
+    <string name="title_activity_google_drive_file">GoogleDriveFile</string>
+    <string name="title_activity_device_file_list">DeviceFileList</string>
+
+    <bool name="isTablet">false</bool>
+
+    <string name="diagrominstructiontext"><i>Ideally begin with identifying the two options (D and D"'"), then determine the needs (B and C) behind the two options. At the end fill in the one higher objective: What is the common or ultimate goal? </i></string>
+    <string name="checkinstruction"><i>It is likely that a solution to the conflict is found due to invalidating the assumptions for BD, CD"'" or DD"'" -> fields A, B, C, AB, AC, I remain (nearly) identical as for previous screens. Verify the contents of each field (tick) or edit to make small changes.\nIn case the solution is found due to invalidating assumptions of AB or AC -> the wording for fields B, C, and possibly A need changing. I needs to be newly defined. Please use edit function, afterwards verify content of fields (tick).\nPlease note changes to field content made on this screen will not be applied to previous screens.</i></string>
+    <string name="txt"><i>Adjust the wording, so that they are ‘coherent’ and represent the problem or dilemma clearly.\nCarry out cross-matching: The action in D endangers need C, conversely, act D’ endangers need B.</i></string>
+    <string name="message"><![CDATA[<b><font color=#00478f>You have now verified all fields. Congratulations you have found a solution to your problem.\nMark conflict as solved?</b>]]></string>
+    <string name="var">D"'"</string>
+</resources>

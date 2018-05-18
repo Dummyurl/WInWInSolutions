@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/openconflict" />
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_close"
+            android:background="@drawable/openconflict" />
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_open"
+            android:background="@drawable/openconflict" />
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/applogo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/underline_page3"
+                    android:textColor="#00478f"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="#00478f"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textMultiLine" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Objective A"
+                        android:textColor="#00478f"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Why A?"
+                        android:textColor="#00478f"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutfooter"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/ee"
+            android:background="#4b4c4d"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
